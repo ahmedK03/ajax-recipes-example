@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/all.min.css"> -->
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <!-- brand/logo -->
+        <a class="navbar-brand" href="#"><img src="images/logo.png" class="w-75" alt=""></a>
+        <!-- collasiable btn -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#recipesSection">Recipes</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <header class="home bg-info overflow-hidden" id="home">
+        <div class="cover-color d-flex justify-content-center align-items-center">
+            <div class="container text-center text-white">
+                <h1 class="text-capitalize h1 display-2">our secret Recipes</h1>
+                <p class="lead">check below </p>
+            </div>
+            <div class="scroll-down">
+            </div>
+        </div>
+    </header>
+
+    <!-- end of home section -->
+    <section class="input_parent">
+        <div class="inputSection">
+            <div class="container">
+                <div class="form row">
+                    <div class="col-md-6 part-1 d-flex my-2">
+                        <select name="cars" class="form-control " id="selector">
+                            <option selected>Select Reciepe</option>
+                            <option value="carrot">carrot</option>
+                            <option value="corn">corn</option>
+                            <option value="salad">salad</option>
+                            <option value="potato">potato</option>
+                            <option value="pumpkin">pumpkin</option>
+                    </select>
+                        <button id="goBtn" class="btn btn-info ml-2">go</button>
+                    </div>
+                    <div class="col-md-6 part-2 d-flex my-2">
+                        <input type="text" class="form-control " id="searchMeals" placeholder="Search Meals">
+                        <button class="btn btn-warning ml-2" id="searchBtn">search</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of inputs section -->
+    <section class="items_bg" id="recipesSection">
+        <div class="displayItems mb-3">
+            <div class="container">
+                <div class="row" id="displayMeals">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="py-3">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="d-inline-block text-capitalize mr-2">powered by</h6>
+                <a href="https://forkify-api.herokuapp.com/" target="_blank"><img src="images/powered-by.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- adding the custom JS file -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
